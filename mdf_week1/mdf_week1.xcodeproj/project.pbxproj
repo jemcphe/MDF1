@@ -16,6 +16,8 @@
 		477657601662B767009D7DCD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4776575F1662B767009D7DCD /* ViewController.m */; };
 		477657631662B767009D7DCD /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 477657611662B767009D7DCD /* ViewController_iPhone.xib */; };
 		477657661662B767009D7DCD /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 477657641662B767009D7DCD /* ViewController_iPad.xib */; };
+		4776576F1662CA4E009D7DCD /* ItemInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4776576D1662CA4E009D7DCD /* ItemInfoViewController.m */; };
+		477657701662CA4E009D7DCD /* ItemInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4776576E1662CA4E009D7DCD /* ItemInfoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,9 @@
 		4776575F1662B767009D7DCD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		477657621662B767009D7DCD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		477657651662B767009D7DCD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		4776576C1662CA4E009D7DCD /* ItemInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemInfoViewController.h; sourceTree = "<group>"; };
+		4776576D1662CA4E009D7DCD /* ItemInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemInfoViewController.m; sourceTree = "<group>"; };
+		4776576E1662CA4E009D7DCD /* ItemInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemInfoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,9 @@
 				477657611662B767009D7DCD /* ViewController_iPhone.xib */,
 				477657641662B767009D7DCD /* ViewController_iPad.xib */,
 				477657531662B767009D7DCD /* Supporting Files */,
+				4776576C1662CA4E009D7DCD /* ItemInfoViewController.h */,
+				4776576D1662CA4E009D7DCD /* ItemInfoViewController.m */,
+				4776576E1662CA4E009D7DCD /* ItemInfoViewController.xib */,
 			);
 			path = mdf_week1;
 			sourceTree = "<group>";
@@ -155,6 +163,7 @@
 				477657571662B767009D7DCD /* InfoPlist.strings in Resources */,
 				477657631662B767009D7DCD /* ViewController_iPhone.xib in Resources */,
 				477657661662B767009D7DCD /* ViewController_iPad.xib in Resources */,
+				477657701662CA4E009D7DCD /* ItemInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +177,7 @@
 				477657591662B767009D7DCD /* main.m in Sources */,
 				4776575D1662B767009D7DCD /* AppDelegate.m in Sources */,
 				477657601662B767009D7DCD /* ViewController.m in Sources */,
+				4776576F1662CA4E009D7DCD /* ItemInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

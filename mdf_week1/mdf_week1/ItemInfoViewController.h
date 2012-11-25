@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ItemInfoViewController.h
 //  mdf_week1
 //
 //  Created by James McPherson on 11/25/12.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-{
-    //IBOutlets
-    IBOutlet UITableView* tableView;
-}
+@interface ItemInfoViewController : UIViewController
+
 @end
