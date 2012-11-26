@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomCellView.h"
 
 @interface ViewController : UIViewController
 {
     //IBOutlets
-    IBOutlet UITableView* tableView;
+    IBOutlet UITableView* cupcakeTableView;
     
     //NSArray for Cupcake Objects
     NSArray* cupcakeArray;

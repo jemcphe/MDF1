@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		471C6F7416633A150056A75B /* CustomCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 471C6F7316633A150056A75B /* CustomCellView.m */; };
+		471C6F7616633A3B0056A75B /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471C6F7516633A3B0056A75B /* CustomCellView.xib */; };
+		471C6F80166343C90056A75B /* cupcakeOnly.png in Resources */ = {isa = PBXBuildFile; fileRef = 471C6F7F166343C90056A75B /* cupcakeOnly.png */; };
 		4776574D1662B766009D7DCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4776574C1662B766009D7DCD /* UIKit.framework */; };
 		4776574F1662B766009D7DCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4776574E1662B766009D7DCD /* Foundation.framework */; };
 		477657511662B766009D7DCD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477657501662B766009D7DCD /* CoreGraphics.framework */; };
@@ -18,11 +21,13 @@
 		477657661662B767009D7DCD /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 477657641662B767009D7DCD /* ViewController_iPad.xib */; };
 		4776576F1662CA4E009D7DCD /* ItemInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4776576D1662CA4E009D7DCD /* ItemInfoViewController.m */; };
 		477657701662CA4E009D7DCD /* ItemInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4776576E1662CA4E009D7DCD /* ItemInfoViewController.xib */; };
-		4776577816631922009D7DCD /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4776577716631922009D7DCD /* CustomTableCell.m */; };
-		4776577A166319D8009D7DCD /* CustomTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47765779166319D8009D7DCD /* CustomTableCellView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		471C6F7216633A150056A75B /* CustomCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellView.h; sourceTree = "<group>"; };
+		471C6F7316633A150056A75B /* CustomCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellView.m; sourceTree = "<group>"; };
+		471C6F7516633A3B0056A75B /* CustomCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView.xib; sourceTree = "<group>"; };
+		471C6F7F166343C90056A75B /* cupcakeOnly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cupcakeOnly.png; path = ../../../Desktop/DolceVita/Logo/cupcakeOnly.png; sourceTree = "<group>"; };
 		477657481662B766009D7DCD /* mdf_week1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mdf_week1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4776574C1662B766009D7DCD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4776574E1662B766009D7DCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,9 +45,6 @@
 		4776576C1662CA4E009D7DCD /* ItemInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemInfoViewController.h; sourceTree = "<group>"; };
 		4776576D1662CA4E009D7DCD /* ItemInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemInfoViewController.m; sourceTree = "<group>"; };
 		4776576E1662CA4E009D7DCD /* ItemInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemInfoViewController.xib; sourceTree = "<group>"; };
-		4776577616631922009D7DCD /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
-		4776577716631922009D7DCD /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
-		47765779166319D8009D7DCD /* CustomTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableCellView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		477657521662B766009D7DCD /* mdf_week1 */ = {
 			isa = PBXGroup;
 			children = (
+				471C6F7F166343C90056A75B /* cupcakeOnly.png */,
 				4776575B1662B767009D7DCD /* AppDelegate.h */,
 				4776575C1662B767009D7DCD /* AppDelegate.m */,
 				4776575E1662B767009D7DCD /* ViewController.h */,
@@ -99,9 +102,9 @@
 				4776576C1662CA4E009D7DCD /* ItemInfoViewController.h */,
 				4776576D1662CA4E009D7DCD /* ItemInfoViewController.m */,
 				4776576E1662CA4E009D7DCD /* ItemInfoViewController.xib */,
-				4776577616631922009D7DCD /* CustomTableCell.h */,
-				4776577716631922009D7DCD /* CustomTableCell.m */,
-				47765779166319D8009D7DCD /* CustomTableCellView.xib */,
+				471C6F7216633A150056A75B /* CustomCellView.h */,
+				471C6F7316633A150056A75B /* CustomCellView.m */,
+				471C6F7516633A3B0056A75B /* CustomCellView.xib */,
 			);
 			path = mdf_week1;
 			sourceTree = "<group>";
@@ -172,7 +175,8 @@
 				477657631662B767009D7DCD /* ViewController_iPhone.xib in Resources */,
 				477657661662B767009D7DCD /* ViewController_iPad.xib in Resources */,
 				477657701662CA4E009D7DCD /* ItemInfoViewController.xib in Resources */,
-				4776577A166319D8009D7DCD /* CustomTableCellView.xib in Resources */,
+				471C6F7616633A3B0056A75B /* CustomCellView.xib in Resources */,
+				471C6F80166343C90056A75B /* cupcakeOnly.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +191,7 @@
 				4776575D1662B767009D7DCD /* AppDelegate.m in Sources */,
 				477657601662B767009D7DCD /* ViewController.m in Sources */,
 				4776576F1662CA4E009D7DCD /* ItemInfoViewController.m in Sources */,
-				4776577816631922009D7DCD /* CustomTableCell.m in Sources */,
+				471C6F7416633A150056A75B /* CustomCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +317,7 @@
 				4776576B1662B767009D7DCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

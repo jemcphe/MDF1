@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "CustomTableCell.h"
+#import "CustomCellView.h"  //Imported CustomCellView
 
 @interface ViewController ()
 
@@ -41,36 +41,46 @@
 
 /**************** Table View Setup *******************/
 
+//sets the height of custom cell
+-(CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70;
+}
+
+//declares the number of rows in my table view
 -(NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
 {
+    // return only the amount of cupcakes in cupcakeArray
     return [cupcakeArray count];
 }
 
+//Create the Cells
 -(UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //Create an Identifier String to pass into reusable cell
     static NSString* cellIdentifier = @"Cell";
     
     //Create UITableViewCell that is reusable
-    CustomTableCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    CustomCellView* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     //checks for the existence of a cell
     if (cell == nil) {
-        cell = [[CustomTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = [[CustomCellView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    
+        //Create an array of cells derived from the CustomCellView
+        NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
         
-    NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomTableCellView" owner:nil options:nil];
-        
+        //Loop through the cells to present to display
         for (UIView* view in views)
         {
-            if([view isKindOfClass:[CustomTableCell class]])
+            if([view isKindOfClass:[CustomCellView class]])
             {
-                cell = (CustomTableCell*)view;
+                cell = (CustomCellView*)view;
+                //Sets the text of cupcakeLabel
+                cell.cupcakeLabel.text = [cupcakeArray objectAtIndex:indexPath.row];
             }
         }
     }
-    
-    //cell.textLabel.text = [cupcakeArray objectAtIndex:indexPath.row];
-    
     return cell;
 }
 
