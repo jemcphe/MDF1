@@ -12,5 +12,9 @@
 {
     //IBOutlets
     IBOutlet UITableView* tableView;
+    
+    //NSArray for Cupcake Objects
+    NSArray* cupcakeArray;
 }
+
 @end
