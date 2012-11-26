@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ItemInfoViewController.h"
 #import "CustomCellView.h"  //Imported CustomCellView
 
 @interface ViewController ()
@@ -83,5 +84,23 @@
     }
     return cell;
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ItemInfoViewController* selectedCupcake = [[ItemInfoViewController alloc] initWithNibName:@"ItemInfoViewController" bundle:nil];
+    if (selectedCupcake != nil) {
+        [self presentModalViewController:selectedCupcake animated:TRUE];
+    }
+    NSLog(@"%@", [cupcakeArray objectAtIndex:indexPath.row]);
+}
+
+
+
+
+
+
+
+
+
 
 @end

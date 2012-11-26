@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ItemInfoViewController.h"
 #import "CustomCellView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate>
 {
     //IBOutlets
     IBOutlet UITableView* cupcakeTableView;

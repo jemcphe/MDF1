@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol cupcakeDelegate <NSObject>
+
+-(void)didSelect:(NSString*) cupcakeString;
+
+@end
+
 @interface ItemInfoViewController : UIViewController
+{
+    IBOutlet UIButton* backButton;
+    IBOutlet UIImageView* cupcakeImage;
+    IBOutlet UILabel* cupcakeName;
+}
+
+-(IBAction)onBack:(id)sender;
+
+@property (strong) id<cupcakeDelegate> delegate;
 
 @end
