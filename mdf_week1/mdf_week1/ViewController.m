@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "CustomCellView.h"
 #import "ItemInfoViewController.h"
-#import "CustomCellView.h"  //Imported CustomCellView
 
 @interface ViewController ()
 
@@ -16,10 +16,12 @@
 
 @implementation ViewController
 
+@synthesize myCupcakes;
+
 - (void)viewDidLoad
 {
     //NSArray to declare Cupcake Objects
-    cupcakeArray = [[NSArray alloc] initWithObjects:@"Canoli", @"Banana Foster", @"Chocolate Hazlenut", @"Red Velvet", @"White Chocolate Mac", @"Peanut Butter Cup", @"Almond Joy", @"Turtle", @"Tiramisu", @"Limoncello", @"S'mores", @"Peanut Butter & Jelly", @"Strawberry Lemonade", nil];
+    myCupcakes = [[NSMutableArray alloc] initWithObjects:@"Canoli", @"Banana Foster", @"Chocolate Hazlenut", @"Red Velvet", @"White Chocolate Mac", @"Peanut Butter Cup", @"Almond Joy", @"Turtle", @"Tiramisu", @"Limoncello", @"S'mores", @"Peanut Butter & Jelly", @"Strawberry Lemonade",@"Lucky Charm", @"Carrot", @"Zucchini", @"Pumpkin Roll", @"Candy Corn", @"Pecan Pie", @"Egg Nog", nil];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -52,7 +54,7 @@
 -(NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
 {
     // return only the amount of cupcakes in cupcakeArray
-    return [cupcakeArray count];
+    return [myCupcakes count];
 }
 
 //Create the Cells
@@ -78,7 +80,7 @@
             {
                 cell = (CustomCellView*)view;
                 //Sets the text of cupcakeLabel
-                cell.cupcakeLabel.text = [cupcakeArray objectAtIndex:indexPath.row];
+                cell.cupcakeLabel.text = [myCupcakes objectAtIndex:indexPath.row];
             }
         }
     }
@@ -89,15 +91,55 @@
 {
     ItemInfoViewController* selectedCupcake = [[ItemInfoViewController alloc] initWithNibName:@"ItemInfoViewController" bundle:nil];
     if (selectedCupcake != nil) {
+        NSArray* cupcakeInfo = [[NSArray alloc] initWithObjects:[myCupcakes objectAtIndex:indexPath.row], indexPath, nil];
+        
+        selectedCupcake.cupcakeArray = cupcakeInfo;
+        
+//        if (delegate == nil) {
+//            [delegate didSelect:[[NSString alloc] initWithFormat:@"%@", [cupcakeArray objectAtIndex:indexPath.row]] cupcakeImage:nil];
+//            NSLog(@"In the delegate");
+//        }
+        
+        
         [self presentModalViewController:selectedCupcake animated:TRUE];
     }
-    NSLog(@"%@", [cupcakeArray objectAtIndex:indexPath.row]);
+    NSLog(@"%@", [myCupcakes objectAtIndex:indexPath.row]);
 }
 
+/********** Editing Section **********/
 
+//Puts the cell into edit mode
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // return a editing style for item deletion
+    return UITableViewCellEditingStyleDelete;
+}
 
+//This will allow rows to be deleted
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        // rows that will be deleted
+        NSArray *deleteRows = [NSArray arrayWithObject:indexPath];
+        
+        // a call to delete the row
+        [myCupcakes removeObjectAtIndex:indexPath.row];
+        // delete the row(s) in the rowsToDelete array
+        [cupcakeTableView deleteRowsAtIndexPaths:deleteRows withRowAnimation:true];
+    }
+}
 
-
+//function that makes edit button activate edit mode.
+-(IBAction)onEdit:(id)sender
+{
+    editButton = (UIButton*)sender;
+    
+    if (editButton != nil) {
+        [cupcakeTableView setEditing:TRUE];
+    }
+    
+}
 
 
 

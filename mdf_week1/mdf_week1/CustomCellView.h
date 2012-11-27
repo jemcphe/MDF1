@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
+#import "ItemInfoViewController.h"
 
 @interface CustomCellView : UITableViewCell
 

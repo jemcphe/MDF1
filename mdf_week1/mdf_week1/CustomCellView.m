@@ -7,6 +7,8 @@
 //
 
 #import "CustomCellView.h"
+#import "ViewController.h"
+#import "ItemInfoViewController.h"
 
 @implementation CustomCellView
 

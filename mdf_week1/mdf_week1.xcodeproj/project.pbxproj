@@ -21,6 +21,12 @@
 		477657661662B767009D7DCD /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 477657641662B767009D7DCD /* ViewController_iPad.xib */; };
 		4776576F1662CA4E009D7DCD /* ItemInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4776576D1662CA4E009D7DCD /* ItemInfoViewController.m */; };
 		477657701662CA4E009D7DCD /* ItemInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4776576E1662CA4E009D7DCD /* ItemInfoViewController.xib */; };
+		478EFE6A1664760000E33333 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 478EFE691664760000E33333 /* Default.png */; };
+		478EFE6C1664778000E33333 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478EFE6B1664778000E33333 /* Default@2x.png */; };
+		478EFE6E1664785E00E33333 /* retinaApp.png in Resources */ = {isa = PBXBuildFile; fileRef = 478EFE6D1664785E00E33333 /* retinaApp.png */; };
+		478EFE701664786E00E33333 /* iphone4app.png in Resources */ = {isa = PBXBuildFile; fileRef = 478EFE6F1664786E00E33333 /* iphone4app.png */; };
+		478EFE721664787500E33333 /* retinaApp.png in Resources */ = {isa = PBXBuildFile; fileRef = 478EFE711664787500E33333 /* retinaApp.png */; };
+		478EFE741664787D00E33333 /* iphone4app.png in Resources */ = {isa = PBXBuildFile; fileRef = 478EFE731664787D00E33333 /* iphone4app.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +51,12 @@
 		4776576C1662CA4E009D7DCD /* ItemInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemInfoViewController.h; sourceTree = "<group>"; };
 		4776576D1662CA4E009D7DCD /* ItemInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemInfoViewController.m; sourceTree = "<group>"; };
 		4776576E1662CA4E009D7DCD /* ItemInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemInfoViewController.xib; sourceTree = "<group>"; };
+		478EFE691664760000E33333 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		478EFE6B1664778000E33333 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		478EFE6D1664785E00E33333 /* retinaApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retinaApp.png; path = ../../../Desktop/DolceVita/Logo/retinaApp.png; sourceTree = "<group>"; };
+		478EFE6F1664786E00E33333 /* iphone4app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iphone4app.png; path = ../../../Desktop/DolceVita/Logo/iphone4app.png; sourceTree = "<group>"; };
+		478EFE711664787500E33333 /* retinaApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retinaApp.png; sourceTree = "<group>"; };
+		478EFE731664787D00E33333 /* iphone4app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone4app.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,10 @@
 		4776573D1662B766009D7DCD = {
 			isa = PBXGroup;
 			children = (
+				478EFE731664787D00E33333 /* iphone4app.png */,
+				478EFE711664787500E33333 /* retinaApp.png */,
+				478EFE6B1664778000E33333 /* Default@2x.png */,
+				478EFE691664760000E33333 /* Default.png */,
 				477657521662B766009D7DCD /* mdf_week1 */,
 				4776574B1662B766009D7DCD /* Frameworks */,
 				477657491662B766009D7DCD /* Products */,
@@ -91,6 +107,8 @@
 		477657521662B766009D7DCD /* mdf_week1 */ = {
 			isa = PBXGroup;
 			children = (
+				478EFE6F1664786E00E33333 /* iphone4app.png */,
+				478EFE6D1664785E00E33333 /* retinaApp.png */,
 				471C6F7F166343C90056A75B /* cupcakeOnly.png */,
 				4776575B1662B767009D7DCD /* AppDelegate.h */,
 				4776575C1662B767009D7DCD /* AppDelegate.m */,
@@ -177,6 +195,12 @@
 				477657701662CA4E009D7DCD /* ItemInfoViewController.xib in Resources */,
 				471C6F7616633A3B0056A75B /* CustomCellView.xib in Resources */,
 				471C6F80166343C90056A75B /* cupcakeOnly.png in Resources */,
+				478EFE6A1664760000E33333 /* Default.png in Resources */,
+				478EFE6C1664778000E33333 /* Default@2x.png in Resources */,
+				478EFE6E1664785E00E33333 /* retinaApp.png in Resources */,
+				478EFE701664786E00E33333 /* iphone4app.png in Resources */,
+				478EFE721664787500E33333 /* retinaApp.png in Resources */,
+				478EFE741664787D00E33333 /* iphone4app.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

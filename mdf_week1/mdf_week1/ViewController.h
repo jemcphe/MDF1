@@ -8,15 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "ItemInfoViewController.h"
-#import "CustomCellView.h"
 
 @interface ViewController : UIViewController <UITableViewDelegate>
-{
+{    
     //IBOutlets
     IBOutlet UITableView* cupcakeTableView;
+    IBOutlet UIButton* editButton;
     
-    //NSArray for Cupcake Objects
-    NSArray* cupcakeArray;
 }
+
+@property (strong, nonatomic) NSMutableArray* myCupcakes;
+
+-(IBAction)onEdit:(id)sender;
+
 
 @end
