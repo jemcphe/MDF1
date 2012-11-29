@@ -18,7 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Second", @"Second");
+        self.title = NSLocalizedString(@"Articles", @"Articles");
         self.tabBarItem.image = [UIImage imageNamed:@"second"];
     }
     return self;
@@ -26,6 +26,12 @@
 							
 - (void)viewDidLoad
 {
+    //Set Color for UINavigation Bar
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    
+    //Array for Articles in Table View
+    articleArray = [[NSArray alloc] initWithObjects:@"Communication Is Key", @"Concussion Rates", @"Head Games", @"Concussion Lawsuits", @"Football To Violent", @"Junior Seau's Death", nil];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -43,11 +49,17 @@
 
 /******************* TableView Setup *********************/
 
+//sets the height of custom cell
+-(CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70;
+}
+
 //declares the number of rows in my table view
 -(NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
 {
     // return only the amount of cupcakes in cupcakeArray
-    return 5;
+    return articleArray.count;
 }
 
 //Create the Cells
@@ -61,26 +73,12 @@
     
     //checks for the existence of a cell
     if (cell == nil) {
+        
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
         
-        //Create an array of cells derived from the UITableView
-        //NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"UITableView" owner:nil options:nil];
-        
-//        //Loop through the cells to present to display
-//        for (UIView* view in views)
-//        {
-//            if([view isKindOfClass:[CustomCellView class]])
-//            {
-//                cell = (CustomCellView*)view;
-//                //Sets the text of cupcakeLabel
-//                cell.cupcakeLabel.text = [myCupcakes objectAtIndex:indexPath.row];
-//            }
-//        }
     }
     
-    static int count = 1;
-    cell.textLabel.text = [[NSString alloc] initWithFormat:@"Info Cell # %d", count];
-    count++;
+    cell.textLabel.text = (NSString*)[articleArray objectAtIndex:indexPath.row];
     
     return cell;
 }

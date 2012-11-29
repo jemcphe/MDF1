@@ -25,12 +25,13 @@
     UINavigationController* navController1 = [[UINavigationController alloc] initWithRootViewController:viewController1];
     
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    UINavigationController* navController2 = [[UINavigationController alloc] initWithRootViewController:viewController2];
     UIViewController *viewController3 = [[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
     //Add a UINavigationController to viewController3
     UINavigationController* navController3 = [[UINavigationController alloc] initWithRootViewController:viewController3];
 
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[navController1, viewController2, navController3];
+    self.tabBarController.viewControllers = @[navController1, navController2, navController3];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

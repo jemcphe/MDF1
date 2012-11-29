@@ -82,7 +82,6 @@
 						<string key="NSFrame">{{20, 181}, {280, 88}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
@@ -111,7 +110,7 @@ bmRWaWV3Q29udHJvbGxlciDigJQgc3BlY2lmaWVkIGluIHRoZSBhcHAgZGVsZWdhdGUuA</string>
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUITableView" id="800079840">
+					<object class="IBUITableView" id="608171344">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
 						<string key="NSFrameSize">{320, 411}</string>
@@ -119,7 +118,7 @@ bmRWaWV3Q29udHJvbGxlciDigJQgc3BlY2lmaWVkIGluIHRoZSBhcHAgZGVsZWdhdGUuA</string>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="483052203"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<object class="NSColor" key="IBUIBackgroundColor" id="739034208">
+						<object class="NSColor" key="IBUIBackgroundColor" id="954812934">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
 						</object>
@@ -129,7 +128,7 @@ bmRWaWV3Q29udHJvbGxlciDigJQgc3BlY2lmaWVkIGluIHRoZSBhcHAgZGVsZWdhdGUuA</string>
 						<int key="IBUISeparatorStyle">1</int>
 						<int key="IBUISectionIndexMinimumDisplayRowCount">0</int>
 						<bool key="IBUIShowsSelectionImmediatelyOnTouchBegin">YES</bool>
-						<float key="IBUIRowHeight">44</float>
+						<float key="IBUIRowHeight">62</float>
 						<float key="IBUISectionHeaderHeight">22</float>
 						<float key="IBUISectionFooterHeight">22</float>
 					</object>
@@ -137,8 +136,8 @@ bmRWaWV3Q29udHJvbGxlciDigJQgc3BlY2lmaWVkIGluIHRoZSBhcHAgZGVsZWdhdGUuA</string>
 				<string key="NSFrame">{{0, 20}, {320, 411}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="800079840"/>
-				<reference key="IBUIBackgroundColor" ref="739034208"/>
+				<reference key="NSNextKeyView" ref="608171344"/>
+				<reference key="IBUIBackgroundColor" ref="954812934"/>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<object class="IBUISimulatedTabBarMetrics" key="IBUISimulatedBottomBarMetrics"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -158,14 +157,14 @@ bmRWaWV3Q29udHJvbGxlciDigJQgc3BlY2lmaWVkIGluIHRoZSBhcHAgZGVsZWdhdGUuA</string>
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">infoTableView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="800079840"/>
+						<reference key="destination" ref="608171344"/>
 					</object>
 					<int key="connectionID">11</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">dataSource</string>
-						<reference key="source" ref="800079840"/>
+						<reference key="source" ref="608171344"/>
 						<reference key="destination" ref="372490531"/>
 					</object>
 					<int key="connectionID">13</int>
@@ -185,7 +184,7 @@ bmRWaWV3Q29udHJvbGxlciDigJQgc3BlY2lmaWVkIGluIHRoZSBhcHAgZGVsZWdhdGUuA</string>
 						<array class="NSMutableArray" key="children">
 							<reference ref="483052203"/>
 							<reference ref="255779567"/>
-							<reference ref="800079840"/>
+							<reference ref="608171344"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -212,7 +211,7 @@ bmRWaWV3Q29udHJvbGxlciDigJQgc3BlY2lmaWVkIGluIHRoZSBhcHAgZGVsZWdhdGUuA</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">8</int>
-						<reference key="object" ref="800079840"/>
+						<reference key="object" ref="608171344"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>

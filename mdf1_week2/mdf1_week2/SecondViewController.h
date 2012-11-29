@@ -11,6 +11,7 @@
 @interface SecondViewController : UIViewController <UITableViewDelegate>
 {
     IBOutlet UITableView* infoTableView;
+    NSArray* articleArray;
 }
 
 @end

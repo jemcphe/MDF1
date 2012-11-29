@@ -27,6 +27,7 @@
 		478EFEB81666DC3700E33333 /* FirstPageInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 478EFEB61666DC3700E33333 /* FirstPageInfo.xib */; };
 		478EFEBC1666DDF500E33333 /* SecondViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 478EFEBA1666DDF500E33333 /* SecondViewInfo.m */; };
 		478EFEBD1666DDF500E33333 /* SecondViewInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 478EFEBB1666DDF500E33333 /* SecondViewInfo.xib */; };
+		478EFEC31666FEE300E33333 /* concussion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 478EFEC21666FEE300E33333 /* concussion.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		478EFEB91666DDF500E33333 /* SecondViewInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewInfo.h; sourceTree = "<group>"; };
 		478EFEBA1666DDF500E33333 /* SecondViewInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewInfo.m; sourceTree = "<group>"; };
 		478EFEBB1666DDF500E33333 /* SecondViewInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewInfo.xib; sourceTree = "<group>"; };
+		478EFEC21666FEE300E33333 /* concussion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = concussion.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		478EFE8A1666D42100E33333 /* mdf1_week2 */ = {
 			isa = PBXGroup;
 			children = (
+				478EFEC21666FEE300E33333 /* concussion.jpg */,
 				478EFE931666D42200E33333 /* AppDelegate.h */,
 				478EFE941666D42200E33333 /* AppDelegate.m */,
 				478EFE961666D42200E33333 /* FirstViewController.h */,
@@ -203,6 +206,7 @@
 				478EFEB31666D78E00E33333 /* ThirdViewController.xib in Resources */,
 				478EFEB81666DC3700E33333 /* FirstPageInfo.xib in Resources */,
 				478EFEBD1666DDF500E33333 /* SecondViewInfo.xib in Resources */,
+				478EFEC31666FEE300E33333 /* concussion.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
