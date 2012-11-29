@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "FirstPageInfo.h"
 
 @interface FirstViewController ()
 
@@ -39,6 +40,15 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+-(IBAction)onClick:(id)sender
+{
+    //Create an instance of FirstPageInfo view controller
+    FirstPageInfo* firstPageInfo = [[FirstPageInfo alloc] initWithNibName:@"FirstPageInfo" bundle:nil];
+    if (firstPageInfo != nil) {
+        [self.navigationController pushViewController:firstPageInfo animated:TRUE];
+    }
 }
 
 @end

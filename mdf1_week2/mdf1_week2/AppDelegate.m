@@ -22,13 +22,15 @@
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     //Add a UINavigationController to viewController1
-    UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    UINavigationController* navController1 = [[UINavigationController alloc] initWithRootViewController:viewController1];
     
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     UIViewController *viewController3 = [[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
+    //Add a UINavigationController to viewController3
+    UINavigationController* navController3 = [[UINavigationController alloc] initWithRootViewController:viewController3];
 
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[navController, viewController2, viewController3];
+    self.tabBarController.viewControllers = @[navController1, viewController2, navController3];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

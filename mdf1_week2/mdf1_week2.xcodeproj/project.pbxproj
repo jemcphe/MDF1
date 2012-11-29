@@ -23,6 +23,10 @@
 		478EFEA91666D42200E33333 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 478EFEA71666D42200E33333 /* SecondViewController.xib */; };
 		478EFEB21666D78E00E33333 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 478EFEB01666D78D00E33333 /* ThirdViewController.m */; };
 		478EFEB31666D78E00E33333 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 478EFEB11666D78D00E33333 /* ThirdViewController.xib */; };
+		478EFEB71666DC3700E33333 /* FirstPageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 478EFEB51666DC3700E33333 /* FirstPageInfo.m */; };
+		478EFEB81666DC3700E33333 /* FirstPageInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 478EFEB61666DC3700E33333 /* FirstPageInfo.xib */; };
+		478EFEBC1666DDF500E33333 /* SecondViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 478EFEBA1666DDF500E33333 /* SecondViewInfo.m */; };
+		478EFEBD1666DDF500E33333 /* SecondViewInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 478EFEBB1666DDF500E33333 /* SecondViewInfo.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,12 @@
 		478EFEAF1666D78D00E33333 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		478EFEB01666D78D00E33333 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		478EFEB11666D78D00E33333 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		478EFEB41666DC3700E33333 /* FirstPageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPageInfo.h; sourceTree = "<group>"; };
+		478EFEB51666DC3700E33333 /* FirstPageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageInfo.m; sourceTree = "<group>"; };
+		478EFEB61666DC3700E33333 /* FirstPageInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstPageInfo.xib; sourceTree = "<group>"; };
+		478EFEB91666DDF500E33333 /* SecondViewInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewInfo.h; sourceTree = "<group>"; };
+		478EFEBA1666DDF500E33333 /* SecondViewInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewInfo.m; sourceTree = "<group>"; };
+		478EFEBB1666DDF500E33333 /* SecondViewInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewInfo.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,12 @@
 				478EFEAF1666D78D00E33333 /* ThirdViewController.h */,
 				478EFEB01666D78D00E33333 /* ThirdViewController.m */,
 				478EFEB11666D78D00E33333 /* ThirdViewController.xib */,
+				478EFEB41666DC3700E33333 /* FirstPageInfo.h */,
+				478EFEB51666DC3700E33333 /* FirstPageInfo.m */,
+				478EFEB61666DC3700E33333 /* FirstPageInfo.xib */,
+				478EFEB91666DDF500E33333 /* SecondViewInfo.h */,
+				478EFEBA1666DDF500E33333 /* SecondViewInfo.m */,
+				478EFEBB1666DDF500E33333 /* SecondViewInfo.xib */,
 			);
 			path = mdf1_week2;
 			sourceTree = "<group>";
@@ -185,6 +201,8 @@
 				478EFEA61666D42200E33333 /* FirstViewController.xib in Resources */,
 				478EFEA91666D42200E33333 /* SecondViewController.xib in Resources */,
 				478EFEB31666D78E00E33333 /* ThirdViewController.xib in Resources */,
+				478EFEB81666DC3700E33333 /* FirstPageInfo.xib in Resources */,
+				478EFEBD1666DDF500E33333 /* SecondViewInfo.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +218,8 @@
 				478EFE981666D42200E33333 /* FirstViewController.m in Sources */,
 				478EFE9F1666D42200E33333 /* SecondViewController.m in Sources */,
 				478EFEB21666D78E00E33333 /* ThirdViewController.m in Sources */,
+				478EFEB71666DC3700E33333 /* FirstPageInfo.m in Sources */,
+				478EFEBC1666DDF500E33333 /* SecondViewInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

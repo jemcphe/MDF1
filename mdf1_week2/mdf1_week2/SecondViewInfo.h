@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  SecondViewInfo.h
 //  mdf1_week2
 //
 //  Created by James McPherson on 11/28/12.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController <UITableViewDelegate>
-{
-    IBOutlet UITableView* infoTableView;
-}
+@interface SecondViewInfo : UIViewController
 
 @end
