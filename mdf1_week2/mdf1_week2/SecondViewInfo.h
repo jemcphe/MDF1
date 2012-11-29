@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface SecondViewInfo : UIViewController
+{
+    IBOutlet UILabel* articleLabel;
+    IBOutlet UILabel* authorLabel;
+    IBOutlet UITextView* articleText;
+}
+
+@property (assign) NSArray* article;
+
+-(void)displayArticle:(NSIndexPath*)index article:(NSString*)articleString;
 
 @end

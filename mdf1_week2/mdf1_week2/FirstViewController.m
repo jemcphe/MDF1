@@ -20,8 +20,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Concussions", @"First");
-        self.tabBarItem.image = [UIImage imageNamed:@"first"];
-        self.tabBarItem.title = @"Topic";
+        self.tabBarItem.image = [UIImage imageNamed:@"questionFace.png"];
+        //self.tabBarItem.title = @"Topic";
     }
     return self;
 }

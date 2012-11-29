@@ -1,35 +1,34 @@
 //
-//  ThirdViewController.m
+//  ThirdViewInfo.m
 //  mdf1_week2
 //
-//  Created by James McPherson on 11/28/12.
+//  Created by James McPherson on 11/29/12.
 //  Copyright (c) 2012 James McPherson. All rights reserved.
 //
 
-#import "ThirdViewController.h"
 #import "ThirdViewInfo.h"
 
-@interface ThirdViewController ()
+@interface ThirdViewInfo ()
 
 @end
 
-@implementation ThirdViewController
+@implementation ThirdViewInfo
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = NSLocalizedString(@"Symptoms", @"Symptoms");
-        self.tabBarItem.image = [UIImage imageNamed:@"symptoms"];
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
-    //Set Color for UINavigation Bar
-    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    //Display symptoms in the textView
+    symptomsLabel.text = @"Symptoms of a concussion can range from mild to severe. They can include:";
+    
+    textView.text = @"Acting confused, feeling spacey, or not thinking straight\n\nBeing drowsy, hard to wake up, or similar changes\n\nHeadache\n\nLoss of consciousness\n\nMemory loss (amnesia) of events before the injury or right after\n\nNausea and vomiting\n\nSeeing flashing lights\n\nFeeling like you have 'lost time'\n\n\n\nhttp://www.ncbi.nlm.nih.gov/pubmedhealth/PMH0001802/";
     
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -45,15 +44,6 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
--(IBAction)onClick:(id)sender
-{
-    //Create an instance of ThirdViewController.
-    ThirdViewInfo* thirdViewInfo = [[ThirdViewInfo alloc] initWithNibName:@"ThirdViewInfo" bundle:nil];
-    if (thirdViewInfo != nil) {
-        [self.navigationController pushViewController:thirdViewInfo animated:TRUE];
-    }
 }
 
 @end

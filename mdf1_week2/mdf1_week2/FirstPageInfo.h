@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstPageInfo : UIViewController
+{
+    IBOutlet UITextView* concussionText;
+}
 
 @end

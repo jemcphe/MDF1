@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ThirdViewController : UIViewController
+{
+    IBOutlet UIButton* symptomsButton;
+}
+
+-(IBAction)onClick:(id)sender;
 
 @end

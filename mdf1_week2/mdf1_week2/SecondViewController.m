@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "SecondViewInfo.h"
 
 @interface SecondViewController ()
 
@@ -19,7 +20,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Articles", @"Articles");
-        self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        self.tabBarItem.image = [UIImage imageNamed:@"article"];
     }
     return self;
 }
@@ -49,12 +50,6 @@
 
 /******************* TableView Setup *********************/
 
-//sets the height of custom cell
--(CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 70;
-}
-
 //declares the number of rows in my table view
 -(NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -81,6 +76,22 @@
     cell.textLabel.text = (NSString*)[articleArray objectAtIndex:indexPath.row];
     
     return cell;
+}
+
+- (UITableViewCellAccessoryType)tableView:(UITableView *)tableView accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewCellAccessoryDisclosureIndicator;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SecondViewInfo* secondViewInfo = [[SecondViewInfo alloc] initWithNibName:@"SecondViewInfo" bundle:nil];
+    if (secondViewInfo != nil) {
+        NSArray* myArticle = [[NSArray alloc] initWithObjects:[articleArray objectAtIndex:indexPath.row], indexPath, nil];
+        
+        secondViewInfo.article = myArticle;
+        
+        [self.navigationController pushViewController:secondViewInfo animated:TRUE];
+    }
 }
 
 @end
